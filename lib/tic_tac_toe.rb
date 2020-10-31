@@ -29,14 +29,7 @@ class TicTacToe
   [6,4,2]
   ].freeze
   
-  def 
-  
-  def input_to_index
-    @user_input.to_i - 1
-  end
-  def turn
-    puts "Please enter 1-9:"
-    @input = gets.strip
-    @index = @input_to_index
+  def input_to_index(user_input)
+    user_input.to_i - 1
   end
 end
