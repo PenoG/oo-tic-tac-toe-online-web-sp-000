@@ -29,4 +29,7 @@ class TicTacToe
   [6,4,2]
   ].freeze
   
+  def input_to_index(user_input)
+  user_input.to_i - 1
+  end
 end
