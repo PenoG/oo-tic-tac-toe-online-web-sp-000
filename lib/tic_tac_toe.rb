@@ -1,6 +1,7 @@
 class TicTacToe
   def initialize(board = nil)
     @board = board || Array.new(9, " ")
+    play
   end
  
   def current_player
@@ -95,4 +96,5 @@ class TicTacToe
       puts "Cat's Game!"
     end
   end
+
 end
