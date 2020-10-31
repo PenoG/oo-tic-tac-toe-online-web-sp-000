@@ -29,7 +29,20 @@ class TicTacToe
   [6,4,2]
   ].freeze
   
+  def 
+  
   def input_to_index
     @user_input.to_i - 1
   end
+  def turn
+    puts "Please enter 1-9:"
+    @input = gets.strip
+    @index = @input_to_index
+    if valid_move?(board, index)
+     move(board,index, current_player(board))
+     display_board(board)
+    else
+      turn(board)
+  end  
+end
 end
