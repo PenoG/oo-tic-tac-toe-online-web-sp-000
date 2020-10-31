@@ -87,4 +87,12 @@ class TicTacToe
       @board[won?.first]
     end
   end
+  def play(board)
+    turn(board) until over?(board)
+    if won?(board)
+      puts "Congratulations #{winner(board)}!"
+    elsif draw?(board)
+      puts "Cat's Game!"
+    end
+  end
 end
